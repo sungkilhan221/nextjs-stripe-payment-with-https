@@ -47,7 +47,8 @@ const CheckoutPage = ({ amount }: { amount: number }) => {
       elements,
       clientSecret,
       confirmParams: {
-        return_url: `http://www.localhost:3000/payment-success?amount=${amount}`,
+        // return_url: `http://www.localhost:3000/payment-success?amount=${amount}`,
+        return_url: `https://nextjs-stripe-payment-with-https.vercel.app/payment-success?amount=${amount}`,
       },
     });
 
